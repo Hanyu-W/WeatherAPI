@@ -21,5 +21,20 @@ namespace WeatherAPI
         {
             this.CenterToScreen();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblZIP_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGetWeatherJSON_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
