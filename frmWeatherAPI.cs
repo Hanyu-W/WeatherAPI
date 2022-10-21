@@ -56,10 +56,6 @@ namespace WeatherAPI
             this.txtWind.Enabled = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         //ignore
         private void lblZIP_Click(object sender, EventArgs e)
@@ -70,6 +66,11 @@ namespace WeatherAPI
         private void btnGetWeatherJSON_Click(object sender, EventArgs e)
         {
             this.GetWeather(true);
+        }
+
+        private void btnGetWeatherXML_Click(object sender, EventArgs e)
+        {
+            this.GetWeather(false);
         }
 
         private void GetWeather(bool isXML)
@@ -133,5 +134,7 @@ namespace WeatherAPI
         {
             this.Dispose();
         }
+
+
     }
 }

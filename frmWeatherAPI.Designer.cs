@@ -29,7 +29,6 @@ namespace WeatherAPI
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnGetWeatherXML = new System.Windows.Forms.Button();
             this.btnGetWeatherJSON = new System.Windows.Forms.Button();
             this.lblZIP = new System.Windows.Forms.Label();
             this.lblCity = new System.Windows.Forms.Label();
@@ -52,20 +51,8 @@ namespace WeatherAPI
             this.txtWind = new System.Windows.Forms.TextBox();
             this.txtClouds = new System.Windows.Forms.TextBox();
             this.btnClose = new System.Windows.Forms.Button();
+            this.btnGetWeatherXML = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btnGetWeatherXML
-            // 
-            this.btnGetWeatherXML.AccessibleName = "";
-            this.btnGetWeatherXML.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnGetWeatherXML.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.btnGetWeatherXML.Location = new System.Drawing.Point(134, 23);
-            this.btnGetWeatherXML.Name = "btnGetWeatherXML";
-            this.btnGetWeatherXML.Size = new System.Drawing.Size(405, 64);
-            this.btnGetWeatherXML.TabIndex = 0;
-            this.btnGetWeatherXML.Text = "Get Weather (XML)";
-            this.btnGetWeatherXML.UseVisualStyleBackColor = false;
-            this.btnGetWeatherXML.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnGetWeatherJSON
             // 
@@ -271,12 +258,26 @@ namespace WeatherAPI
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // btnGetWeatherXML
+            // 
+            this.btnGetWeatherXML.AccessibleName = "";
+            this.btnGetWeatherXML.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnGetWeatherXML.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.btnGetWeatherXML.Location = new System.Drawing.Point(134, 33);
+            this.btnGetWeatherXML.Name = "btnGetWeatherXML";
+            this.btnGetWeatherXML.Size = new System.Drawing.Size(405, 64);
+            this.btnGetWeatherXML.TabIndex = 23;
+            this.btnGetWeatherXML.Text = "Get Weather (XML)";
+            this.btnGetWeatherXML.UseVisualStyleBackColor = false;
+            this.btnGetWeatherXML.Click += new System.EventHandler(this.btnGetWeatherXML_Click);
+            // 
             // frmWeatherAPI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(681, 666);
+            this.Controls.Add(this.btnGetWeatherXML);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.txtClouds);
             this.Controls.Add(this.txtWind);
@@ -299,7 +300,6 @@ namespace WeatherAPI
             this.Controls.Add(this.lblCity);
             this.Controls.Add(this.lblZIP);
             this.Controls.Add(this.btnGetWeatherJSON);
-            this.Controls.Add(this.btnGetWeatherXML);
             this.Name = "frmWeatherAPI";
             this.Text = "Weather API";
             this.Load += new System.EventHandler(this.frmWeatherAPI_Load);
@@ -309,8 +309,6 @@ namespace WeatherAPI
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnGetWeatherXML;
         private System.Windows.Forms.Button btnGetWeatherJSON;
         private System.Windows.Forms.Label lblZIP;
         private System.Windows.Forms.Label lblCity;
@@ -333,6 +331,7 @@ namespace WeatherAPI
         private System.Windows.Forms.TextBox txtWind;
         private System.Windows.Forms.TextBox txtClouds;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnGetWeatherXML;
     }
 }
 
